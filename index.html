@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Morse Code Translator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="icon.ico">
+</head>
+<body id="bos">
+    <center>
+    <br>
+    <font class=hea>The Morse Code Translator</font><br><br><br>
+    <div id="enc" onclick="enc()"><span>ENCODE</span></div>
+    <div id="dec" onclick="dec()"><span>DECODE</span></div>
+    <div id="cop" onclick="copyToClipboard('#out')"><span id="scop">COPY CODE</span></div>
+    <input autocomplete="off" spellcheck="false" id='text' type="text" name="" height="100px" oninput='encode()' width=600px placeholder='Enter your text' id='box'>
+    <br><br>
+    <p id="out"></p> 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="MCT.js"></script>
+    </body>
+</html>
